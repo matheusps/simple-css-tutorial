@@ -1,0 +1,178 @@
+:root {
+  --background-body: #fff;
+  --background: #efefef;
+  --background-alt: #f7f7f7;
+  --selection: #9e9e9e;
+  --text-main: #363636;
+  --text-bright: #000;
+  --text-muted: #999;
+  --links: #0076d1;
+  --focus: #0096bfab;
+  --border: #dbdbdb;
+  --code: #000;
+  --animation-duration: 0.1s;
+  --button-hover: #ddd;
+  --scrollbar-thumb: color-mod(var(--button-hover) lightness(-3%));
+  --scrollbar-thumb-hover: color-mod(var(--button-hover) lightness(-10%));
+  --form-placeholder: #949494;
+  --form-text: #000;
+  --variable: #39a33c;
+  --highlight: #ff0;
+  --select-arrow: svg-load('./assets/select-arrow.svg', fill: #161f27);
+}
+
+.bg-navy {
+  background-color: #001f3f;
+}
+.bg-blue {
+  background-color: #0074d9;
+}
+.bg-aqua {
+  background-color: #7fdbff;
+}
+.bg-teal {
+  background-color: #39cccc;
+}
+.bg-olive {
+  background-color: #3d9970;
+}
+.bg-green {
+  background-color: #2ecc40;
+}
+.bg-lime {
+  background-color: #01ff70;
+}
+.bg-yellow {
+  background-color: #ffdc00;
+}
+.bg-orange {
+  background-color: #ff851b;
+}
+.bg-red {
+  background-color: #ff4136;
+}
+.bg-fuchsia {
+  background-color: #f012be;
+}
+.bg-purple {
+  background-color: #b10dc9;
+}
+.bg-maroon {
+  background-color: #85144b;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-gray {
+  background-color: #aaaaaa;
+}
+.bg-silver {
+  background-color: #dddddd;
+}
+.bg-black {
+  background-color: #111111;
+}
+
+.navy {
+  color: #001f3f;
+}
+.blue {
+  color: #0074d9;
+}
+.aqua {
+  color: #7fdbff;
+}
+.teal {
+  color: #39cccc;
+}
+.olive {
+  color: #3d9970;
+}
+.green {
+  color: #2ecc40;
+}
+.lime {
+  color: #01ff70;
+}
+.yellow {
+  color: #ffdc00;
+}
+.orange {
+  color: #ff851b;
+}
+.red {
+  color: #ff4136;
+}
+.fuchsia {
+  color: #f012be;
+}
+.purple {
+  color: #b10dc9;
+}
+.maroon {
+  color: #85144b;
+}
+.white {
+  color: #ffffff;
+}
+.silver {
+  color: #dddddd;
+}
+.gray {
+  color: #aaaaaa;
+}
+.black {
+  color: #111111;
+}
+
+.border--navy {
+  border-color: #001f3f;
+}
+.border--blue {
+  border-color: #0074d9;
+}
+.border--aqua {
+  border-color: #7fdbff;
+}
+.border--teal {
+  border-color: #39cccc;
+}
+.border--olive {
+  border-color: #3d9970;
+}
+.border--green {
+  border-color: #2ecc40;
+}
+.border--lime {
+  border-color: #01ff70;
+}
+.border--yellow {
+  border-color: #ffdc00;
+}
+.border--orange {
+  border-color: #ff851b;
+}
+.border--red {
+  border-color: #ff4136;
+}
+.border--fuchsia {
+  border-color: #f012be;
+}
+.border--purple {
+  border-color: #b10dc9;
+}
+.border--maroon {
+  border-color: #85144b;
+}
+.border--white {
+  border-color: #ffffff;
+}
+.border--gray {
+  border-color: #aaaaaa;
+}
+.border--silver {
+  border-color: #dddddd;
+}
+.border--black {
+  border-color: #111111;
+}

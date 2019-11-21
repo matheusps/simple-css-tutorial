@@ -1,0 +1,41 @@
+export const DemoVar = () => (
+  <div style={{ padding: '20px' }} class="bg-fuchsia white">
+    Variáveis funcionam funcionam
+  </div>
+)
+
+# Tutorial simples de CSS
+
+### por @matheusps
+
+Faaaala pessoal! Esse é um tutorial muito simples que contém algumas dicas sobre css.
+
+```css
+:root {
+  --fuchsia: #f012be;
+  --white: #ffffff;
+}
+.bg-fuchsia {
+  background-color: var(--fuchsia);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.fuchsia {
+  color: var(--fuchsia);
+}
+.white: {
+  color: var(--white);
+}
+.container: {
+  padding: 20px;
+}
+```
+
+```html
+<div class="container bg-fuchsia white">
+  <h1>Variáveis funcionam funcionam</h1>
+</div>
+```
+
+<DemoVar />

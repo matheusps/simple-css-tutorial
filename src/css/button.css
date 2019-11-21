@@ -1,0 +1,59 @@
+button,
+input[type='submit'],
+input[type='button'] {
+  cursor: pointer;
+
+  color: var(--form-text);
+  background-color: var(--background);
+
+  font-family: inherit;
+  font-size: inherit;
+
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  -webkit-appearance: none;
+
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+button:hover,
+input[type='submit']:hover,
+input[type='button']:hover {
+  background: var(--button-hover);
+}
+
+input[type='submit']:focus,
+button[type='button']:focus {
+  box-shadow: 0 0 0 2px var(--focus);
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  margin-right: 2px;
+}
+
+input[type='submit']:active,
+input[type='button']:active,
+button:active {
+  transform: translateY(2px);
+}
+
+input[type='submit']:disabled,
+input[type='button']:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

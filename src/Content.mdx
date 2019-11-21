@@ -1,6 +1,8 @@
 export const DemoVar = () => (
   <div style={{ padding: '20px' }} class="bg-fuchsia white">
     Variáveis funcionam funcionam
+    <button>Botão teste</button>
+    <input type="text" placeholder="Exemplo de um input bem massa" />
   </div>
 )
 
@@ -8,7 +10,64 @@ export const DemoVar = () => (
 
 ### por @matheusps
 
-Faaaala pessoal! Esse é um tutorial muito simples que contém algumas dicas sobre css.
+Faaaala meus pupilos! Fim de período, to rushando no TCC mas não esqueci de vocês.
+
+Muitos vem me perguntando sobre css, principalmente se podem usar libs no projeto... Não vocês não podem!
+
+Mas a melhor notícia é que CSS é a coisa mais fácil do planeta e ao longo desse tutorial simples, vou dar uma série de dicas que vão te ajudar a construir um estilo legal, libs e sem dor de cabeça.
+
+## CSS é interpretado de maneira diferente em cada navegador
+
+CSS não é renderizado igual pelos navegadores! E sim, esse é o principal motivo do seu CSS não parecer "certo". Sempre acaba com uma interface toda quebrada, com espaços brancos e por aí vai. Certo matheus, como eu conserto isso
+? - Bom, existem duas abordagems:
+
+#### Resetar:
+
+#### Normalizar:
+
+## Espaçamentos
+
+Imagine dois tipos de espaçamento: interno (padding) e externo (margin).
+
+- `padding`: espaçamento INTERNO em todos os lados (top, right, bottom, left)
+- `padding-top`: espaçamento INTERNO para o topo. (análogo para os outros lados)
+- `margin`: espaçamento EXTERNO em todos os lados (top, right, bottom, left)
+- `margin-top`: espaçamento EXTERNO para o topo. (análogo para os outros lados)
+- `...`
+
+Exemplo:
+
+```css
+.container {
+  padding: 5rem;
+  background: #dddddd;
+}
+.item {
+  padding: 2rem;
+  margin: 1rem;
+  background: #ff851b;
+}
+```
+
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+export const DemoSpacing = () => (
+  <div style={{ padding: '5rem', background: '#dddddd' }}>
+    <div
+      style={{ padding: '2rem', margin: '1rem', background: '#ff851b' }}
+    ></div>
+    <div
+      style={{ padding: '2rem', margin: '1rem', background: '#ff851b' }}
+    ></div>
+  </div>
+)
+
+<DemoSpacing />
 
 ```css
 :root {

@@ -1,16 +1,8 @@
-export const DemoVar = () => (
-  <div style={{ padding: '20px' }} class="bg-fuchsia white">
-    Variáveis funcionam funcionam
-    <button>Botão teste</button>
-    <input type="text" placeholder="Exemplo de um input bem massa" />
-  </div>
-)
-
 # Tutorial simples de CSS
 
 ### por @matheusps
 
-Faaaala meus pupilos! Fim de período, to rushando no TCC mas não esqueci de vocês.
+Faaaala meus pupilos! Fim de período, to rushando nas Disciplinas mas não esqueci de vocês.
 
 Muitos vem me perguntando sobre css, principalmente se podem usar libs no projeto... Não vocês não podem!
 
@@ -21,9 +13,10 @@ Mas a melhor notícia é que CSS é a coisa mais fácil do planeta e ao longo de
 CSS não é renderizado igual pelos navegadores! E sim, esse é o principal motivo do seu CSS não parecer "certo". Sempre acaba com uma interface toda quebrada, com espaços brancos e por aí vai. Certo matheus, como eu conserto isso
 ? - Bom, existem duas abordagems:
 
-#### Resetar:
+- Resetar: Ignora os estilos do browser, zerando tudo! Um exemplo de um reset : https://meyerweb.com/eric/tools/css/reset/
+- Normalizar: Adapta os estilos para ficarem mais harmonicos. O normalize é mt usado pra isso: https://necolas.github.io/normalize.css/
 
-#### Normalizar:
+⚠️ Vale a pena lembrar que você pode não precisar de um desses, pq naturalmente pode acabar sobrescrevendo estilos!
 
 ## Espaçamentos
 
@@ -69,10 +62,33 @@ export const DemoSpacing = () => (
 
 <DemoSpacing />
 
+### Fácil né !?
+
+## Alinhamento
+
+Existem zilhões de formas de alinhar seus templates, eu recomendo `flexbox`.
+Por questão de tempo vou deixar um shorhand mt massa pra vcs, que explica bem o que cada regra faz: https://css-tricks.com/snippets/css/a-guide-to-flexbox/.
+
+## Tamanhos
+
+Tu pode usar algumas propriedades para controlar o tamanho de seus elementos:
+
+- `height` : altura
+- `width`: largura
+- `minHeight`: altura mínima, muito útil se um elemento não puder ser menor que algum valor
+- `minWidth`: análogo
+- `maxHeight`: altura máxima que um elemento pode ter
+- `minWidth`: análogo.
+
+## 💡Protip: Variáveis
+
+Sim! CSS tbm tem variáveis (tá mais pra propriedades)! São uteis para reutilizar valores em diversos lugares, assim tu garante uma consistência bacana no teu app. O projeto da disciplina é muito pequeno, então o escopo não é uma preocupação. Pode definir tudo globalmente através do seletor `:root` como no exemplo abaixo:
+
 ```css
 :root {
   --fuchsia: #f012be;
   --white: #ffffff;
+  --pd: 20px;
 }
 .bg-fuchsia {
   background-color: var(--fuchsia);
@@ -87,7 +103,7 @@ export const DemoSpacing = () => (
   color: var(--white);
 }
 .container: {
-  padding: 20px;
+  padding: var(--pd);
 }
 ```
 
@@ -96,5 +112,11 @@ export const DemoSpacing = () => (
   <h1>Variáveis funcionam funcionam</h1>
 </div>
 ```
+
+export const DemoVar = () => (
+  <div style={{ padding: '20px' }} class="bg-fuchsia white">
+    Variáveis funcionam funcionam
+  </div>
+)
 
 <DemoVar />

@@ -120,3 +120,59 @@ export const DemoVar = () => (
 )
 
 <DemoVar />
+
+## Estilizando Botões e Forms
+
+O projeto pede APENAS isso de estilo praticamente. La vai outra protip: ESTILIZE TODOS OS BOTÕES DE UMA VEZ!. Sim, você pode tratar um grupo de elementos de uma vez com css.
+
+Fica ligado que o botão, assim como inputs, tem evetos: -`:hover`: Quando o mouse fica em cima. -`:focus`: O botão está com o foco em si. -`:active`: O botão está ativo.
+
+```css
+root: {
+  --c-text: #212121;
+  --spacing-v: 6px;
+  --spacing-h: 30px;
+  --background: #efefef;
+  --focus: #0096bfab;
+  --button-hover: #ddd;
+  --animation-duration: 0.1s;
+}
+
+button {
+  cursor: pointer;
+  color: var(--c-text);
+  background-color: var(--background);
+  margin-right: var(--spacing-v);
+  margin-bottom: var(--spacing-v);
+  padding: var(--spacing-v) var(--spacing-h) var(--spacing-v) var(--spacing-h);
+  border: none;
+  border-radius: (--spacing-v);
+  transition: background-color var(--animation-duration) linear, border-color
+      var(--animation-duration) linear, color var(--animation-duration) linear, box-shadow
+      var(--animation-duration) linear, transform var(--animation-duration) ease;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+button:focus {
+  box-shadow: 0 0 0 2px var(--focus);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+```
+
+```html
+<button>
+  Botão legal
+</button>
+```
+
+export const DemoButton = () => <button>Botão legal</button>
+
+### RESULTADO:
+
+<DemoButton />
